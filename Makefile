@@ -58,6 +58,10 @@ vbox: ## Installs the virtual box.
 vscode: ## Installs the visual studio text editor.
 	@./vscode.sh
 
+.PHONY: python
+vscode: ## Installs the Python stuffs.
+	@./python.sh
+
 PHONY: test
 test: shelltest## Runs all the tests on all the installation scripts in the repository.
 
@@ -75,7 +79,7 @@ shellcheck: # Runs the shellcheck and shfmt tests on the scripts.
 		--name shelltest \
 		-v $(CURDIR):/usr/src:ro \
 		--workdir /usr/src \
-		dungeonmaster18/shelltest ./test.sh   
+		dungeonmaster18/shelltest ./test.sh
 
 .PHONY: help
 help: ## Shows help.

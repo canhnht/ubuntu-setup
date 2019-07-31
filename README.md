@@ -8,15 +8,17 @@ It's a simple one command linux development setup. It uses bash script and makef
 
 ### Supported Platforms
 
-* Ubuntu 16.04 LTS(Tested)
-* Ubuntu 17.10 LTS(Tested)
-* Ubuntu 18.04 LTS(Tested)(Except for docker)
-* It should also work on debian based other distros as well.
+- Ubuntu 16.04 LTS(Tested)
+- Ubuntu 17.10 LTS(Tested)
+- Ubuntu 18.04 LTS(Tested)(Except for docker)
+- It should also work on debian based other distros as well.
 
 ### Installation
 
 Installation is pretty much easy. You just need to select which app you want to install and see the following for a perticular installation command.
+
 > I would suggest always install the base script first for other scripts to work properly.
+
 ```
 $ make help
 
@@ -42,26 +44,28 @@ Targets:
     vagrant                        Installs the vagrant.
     vbox                           Installs the virtual box.
     vscode                         Installs the visual studio text editor.
+    python                         Installs the Python stuffs.
+    ai-lab                         Setup ubuntu for ACworks AI lab.
 ```
 
 ### Testing
 
-* It uses [Shellcheck](https://github.com/koalaman/shellcheck) to test the scripts. It can be done in two ways
-    * Using Docker<br>
-    ``` make test ```
-    * Using Shellcheck Binary<br>
-    ``` ./test.sh ```
+- It uses [Shellcheck](https://github.com/koalaman/shellcheck) to test the scripts. It can be done in two ways
 
-* Test the script by running on your machine and see if it gets installed correctly.
+  - Using Docker<br>
+    `make test`
+  - Using Shellcheck Binary<br>
+    `./test.sh`
+
+- Test the script by running on your machine and see if it gets installed correctly.
 
 ### Formatting
 
 Though this step is not mandatory but I do encourage people to format their shell scripts. It uses [shfmt](https://github.com/mvdan/sh) to format the scripts. To format your script just run.<br>
 
-```make format```
+`make format`
 
 > It uses [Google's Style](https://google.github.io/styleguide/shell.xml) guide to format the script.
-
 
 ### Motivation
 

@@ -22,4 +22,7 @@ sudo apt-get install -y \
   libssl-dev \
   software-properties-common >/dev/null
 
+git config --global user.name "ACworks-AI-Lab"
+git config --global user.email "ai-lab@acworks.co.jp"
+
 echo -e "\\033[0;32m[OK]\\033[0m"
