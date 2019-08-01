@@ -59,8 +59,16 @@ vscode: ## Installs the visual studio text editor.
 	@./vscode.sh
 
 .PHONY: python
-vscode: ## Installs the Python stuffs.
+python: ## Installs the Python stuffs.
 	@./python.sh
+
+.PHONY: tensorflow
+tensorflow: ## Installs TensorFlow.
+	@./tensorflow.sh
+
+.PHONY: ai-lab
+ai-lab: ## Setup development environment for AI Lab machine.
+	@./ai-lab.sh
 
 PHONY: test
 test: shelltest## Runs all the tests on all the installation scripts in the repository.

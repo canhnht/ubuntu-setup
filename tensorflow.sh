@@ -5,24 +5,7 @@ set -e
 
 sudo -v
 
-echo -n "Installing Python Stuffs ..."
-
-sudo apt-get install -y \
-  python3-pip \
-  python3-pil \
-  python3-matplotlib >/dev/null
-
-pip3 --version
-pip3 install -U virtualenv
-which virtualenv
-pip3 install -U virtualenvwrapper
-pip3 install -U jupyter jupyterlab jupyter_http_over_ws
-
-echo "#Virtualenvwrapper settings:" >> ~/.bashrc
-echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
-echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
-echo "export VIRTUALENVWRAPPER_VIRTUALENV=~/.local/bin/virtualenv" >> ~/.bashrc
-echo "source ~/.local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+echo -n "Installing TensorFlow ..."
 
 # Install TensorFlow on Jetson Platform
 # Reference: https://docs.nvidia.com/deeplearning/frameworks/install-tf-jetson-platform/index.html

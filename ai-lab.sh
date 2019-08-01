@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 
 make base
-make desktop
-make vscode
 make python
 
 # Install virtualenvwrapper
